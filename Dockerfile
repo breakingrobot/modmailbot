@@ -1,4 +1,4 @@
-FROM node:23-alpine
+FROM nikolaik/python-nodejs:python3.13-nodejs23-alpine
 LABEL name "modmailbot"
 LABEL version "3.8.0"
 
