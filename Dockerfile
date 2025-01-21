@@ -4,6 +4,9 @@ LABEL version "3.8.0"
 
 WORKDIR /usr/modmailbot
 
+RUN apk add --no-cache make
+RUN apk add g++
+
 COPY package.json package-lock.json ./
 RUN npm ci --production
 
